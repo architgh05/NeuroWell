@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Health Library</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('/static/bgimage5.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: white;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .intro-text {
+      max-width: 800px;
+      color: white;
+      font-size: 18px;
+      margin-bottom: 40px;
+      text-align: center;
+      line-height: 1.6;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      padding: 25px;
+      width: 300px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .card h2 {
+      color: black;
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+
+    .card ul {
+      text-align: left;
+      padding-left: 18px;
+      color: #333;
+      font-size: 15px;
+    }
+
+    @media (max-width: 1000px) {
+      .card-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Health Library</h1>
+
+  <div class="intro-text">
+    The Health Library is your one-stop destination for trusted, easy-to-understand information on brain health. 
+    Whether you're here to learn more about Alzheimer’s, brain tumors, or how to support a healthy mind, this library offers 
+    resources, guides, and insights to help you make informed decisions. Knowledge is power—and here, it begins with understanding.
+  </div>
+
+  <div class="card-container">
+    <div class="card" onclick="window.location.href='/libcard1'" role="button" tabindex="0">
+      <h2>Alzheimer’s Disease</h2>
+      <ul>
+        <li>Early signs and symptoms</li>
+        <li>Stages of progression</li>
+        <li>Current treatment options</li>
+        <li>Lifestyle support and memory care</li>
+      </ul>
+    </div>
+
+    <div class="card" onclick="window.location.href='/libcard2'" role="button" tabindex="0">
+      <h2>Brain Tumor</h2>
+      <ul>
+        <li>Types: benign vs malignant</li>
+        <li>Causes and risk factors</li>
+        <li>Diagnostic imaging and scans</li>
+        <li>Surgical and radiation treatments</li>
+      </ul>
+    </div>
+
+    <div class="card" onclick="window.location.href='/libcard3'" role="button" tabindex="0">
+      <h2>Mental Health</h2>
+      <ul>
+        <li>Stress and neurological health</li>
+        <li>Early signs of cognitive decline</li>
+        <li>Depression and dementia link</li>
+        <li>Resources for support and therapy</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

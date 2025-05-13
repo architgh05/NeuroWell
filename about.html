@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - NeuroWell</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('/static/bgimage5.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      min-height: 100vh;
+    }
+
+    .container {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+      margin-top: 60px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #4a90e2;
+    }
+
+    p, ul {
+      line-height: 1.6;
+      margin-top: 20px;
+      color: #eee;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    /* Team section */
+    .team-section {
+      margin-top: 50px;
+    }
+
+    .team-member {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .team-member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+      border: 3px solid #4a90e2;
+    }
+
+    .member-info h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #4a90e2;
+    }
+
+    .member-info p {
+      margin: 8px 0 0;
+      color: #ddd;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .team-member {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .team-member img {
+        margin-bottom: 15px;
+        margin-right: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>About NeuroWell</h1>
+    <p>
+      NeuroWell is a powerful AI-powered platform designed to aid in the early detection of Alzheimer's disease and brain tumors using cutting-edge machine learning and deep learning technologies.
+    </p>
+    <p>
+      Our mission is to bridge the gap between concern and care by offering accessible diagnostic tools that empower individuals and assist healthcare professionals in making informed decisions.
+    </p>
+    <p>
+      The system combines two advanced models:
+      <ul>
+        <li>A CNN-based model for detecting Alzheimer’s via brain scans.</li>
+        <li>A Random Forest classifier using clinical data for deeper insights.</li>
+      </ul>
+    </p>
+    <p>
+      Built by passionate minds committed to healthcare innovation.
+    </p>
+
+    <!-- 👥 Team Section -->
+    <div class="team-section">
+      <h2>Meet the Team</h2>
+
+      <div class="team-member">
+        <img src="/static/areen.jpg" alt="Areen Thakur">
+        <div class="member-info">
+          <h3>Dr. Areen Thakur</h3>
+          <p>Chief Medical Advisor – Specialist in neurodegenerative diagnostics with over 15 years of clinical experience.</p>
+        </div>
+      </div>
+
+      <div class="team-member">
+        <img src="/static/archit.jpg" alt="Archit Gautam">
+        <div class="member-info">
+          <h3>Archit Gautam</h3>
+          <p>Lead AI Developer – Designed and trained the CNN model used in Alzheimer’s detection. Passionate about deep learning in healthcare.</p>
+        </div>
+      </div>
+
+      <div class="team-member">
+        <img src="/static/arnav.jpg" alt="Arnav Kumar">
+        <div class="member-info">
+          <h3>Arnav Kumar</h3>
+          <p>Product Designer & Content Strategist – Oversees UX design and visual storytelling, ensuring NeuroWell communicates clearly and beautifully.</p>
+        </div>
+      </div>
+
+      <div class="team-member">
+        <img src="/static/harsh.jpg" alt="Harsh Kumar">
+        <div class="member-info">
+          <h3>Arunima Mohanty</h3>
+          <p>Data Analyst – Responsible for preparing structured clinical datasets and optimizing the Random Forest model for accuracy.</p>
+        </div>
+      </div>
+
+      <div class="team-member">
+        <img src="/static/arnav.jpg" alt="Arnav">
+        <div class="member-info">
+          <h3>Arnav Kumar</h3>
+          <p>Frontend Developer – Crafts engaging and responsive UI components for the NeuroWell web interface.</p>
+        </div>
+      </div>
+
+      <div class="team-member">
+        <img src="/static/harsh.jpg" alt="Harsh">
+        <div class="member-info">
+          <h3>Harsh Kumar</h3>
+          <p>Presentation & Reporting Specialist – Translates technical results into meaningful reports and impactful visual presentations.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

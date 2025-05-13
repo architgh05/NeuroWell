@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diagnosis - NEUROWELL</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('/static/bgimage5.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      border-radius: 15px;
+      padding: 50px;
+      max-width: 1000px;
+      width: 90%;
+      align-items: center;
+    }
+
+    .left {
+      flex: 1;
+      text-align: left;
+    }
+
+    .left h2 {
+      color: #333;
+      margin-bottom: 30px;
+      font-size: 56px;
+      font-weight: bold;
+    }
+
+    .left .square-button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      text-decoration: none;
+      background-color:rgb(241, 242, 244);
+      color: black;
+      font-size: 16px;
+      font-weight: 500;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .left .square-button:hover {
+      background-color:rgb(187, 219, 248);
+      transform: scale(1.05);
+    }
+
+    .instruction {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .right {
+      flex: 1;
+      text-align: right;
+    }
+
+    .right img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .right {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .left .square-button {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h2>Diagnosis</h2>
+      <a class="square-button" href="/alzy">Alzheimer's</a>
+      <a class="square-button" href="/braintumor">Brain Tumor</a>
+      <p class="instruction">Click the required button for diagnosis</p>
+    </div>
+    <div class="right">
+      <img src="/static/bgimage10.png" alt="Brain Scan Image">
+    </div>
+  </div>
+</body>
+</html>
